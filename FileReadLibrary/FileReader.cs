@@ -48,4 +48,31 @@ public class FileReader
 
     }
 
+    public string ReadEncryptedTextFile(string filePath)
+    {
+        try
+        {
+            // Check if the file exists
+            if (File.Exists(filePath))
+            {
+                // Read the contents of the encrypted text file as a string
+                string content = File.ReadAllText(filePath);
+
+                // Decrypt the content using a simple reverse encryption method
+                // Using an array of characters because string is not mutable
+                char[] charArray = content.ToCharArray();
+                Array.Reverse(charArray);
+                string decryptedContent = new string(charArray);
+                return decryptedContent;
+            }
+            else
+            {
+                return "Encrypted text file not found.";
+            }
+        }
+        catch (Exception ex)
+        {
+            return $"An error occurred while reading the encrypted text file: {ex.Message}";
+        }
+    }
 }
