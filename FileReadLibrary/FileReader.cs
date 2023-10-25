@@ -16,7 +16,7 @@ public class FileReader
             }
             else
             {
-                return "File not found.";
+                return "Text file not found.";
             }
         }
         catch (Exception ex)
@@ -24,5 +24,28 @@ public class FileReader
             return $"An error occurred while reading the text file: {ex.Message}";
         }
     }
-}
 
+    public string ReadXmlFile(string filePath)
+    {
+        try
+        {
+            // Check if the file exists
+            if (File.Exists(filePath))
+            {
+                // Read the contents of the XML file as a string
+                string xmlContent = File.ReadAllText(filePath);
+                return xmlContent;
+            }
+            else
+            {
+                return "XML file not found.";
+            }
+        }
+        catch (Exception ex)
+        {
+            return $"An error occurred while reading the XML file: {ex.Message}";
+        }
+
+    }
+
+}
