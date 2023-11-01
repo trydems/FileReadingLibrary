@@ -94,4 +94,34 @@ public class FileReader
                 return "Access denied.";
         }
     }
+
+    public string ReadEncryptedXmlFile(string filePath)
+    {
+        try
+        {
+            // Check if the file exists
+            if (File.Exists(filePath))
+            {
+                string xmlContent = File.ReadAllText(filePath);
+
+                // Convert the content to a character array
+                char[] charArray = xmlContent.ToCharArray();
+
+                // Reverse the character array
+                Array.Reverse(charArray);
+
+                // Create a new string from the reversed character array
+                string decryptedXmlContent = new string(charArray);
+                return decryptedXmlContent;
+            }
+            else
+            {
+                return "Encrypted xml file not found.";
+            }
+        }
+        catch (Exception ex)
+        {
+            return $"An error occurred while reading the encrypted xml file: {ex.Message}";
+        }
+    }
 }

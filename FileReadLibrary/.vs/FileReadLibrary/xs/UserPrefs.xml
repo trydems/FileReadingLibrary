@@ -2,11 +2,17 @@
   <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.Workbench ActiveDocument="FileReader.cs">
     <Files>
-      <File FileName="Class1.cs" Line="96" Column="6" />
+      <File FileName="FileReader.cs" Line="98" Column="5" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
-        <State name="__root__" />
+        <State name="__root__">
+          <Node name="FileReadLibrary">
+            <Node name="FileReadLibrary">
+              <Node name="FileReader.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
