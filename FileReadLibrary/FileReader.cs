@@ -124,4 +124,21 @@ public class FileReader
             return $"An error occurred while reading the encrypted xml file: {ex.Message}";
         }
     }
+
+    public string ReadTextFileWithRoleSecurity(string filePath, string role)
+    {
+        switch (role)
+        {
+            // Admins have unrestricted access
+            case "admin":
+                return ReadTextFile(filePath);
+
+            // Users can only read .....
+            case "user":
+                return ReadTextFile(filePath);
+            // another role will result in a restriction
+            default:
+                return "Access denied.";
+        }
+    }
 }
