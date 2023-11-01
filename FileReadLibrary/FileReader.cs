@@ -163,4 +163,33 @@ public class FileReader
             return $"An error occurred while reading the JSON file: {ex.Message}";
         }
     }
+
+    public string ReadEncryptedJsonFile(string filePath)
+    {
+        try
+        {
+            // Check if the file exists
+            if (File.Exists(filePath))
+            {
+                // Read the encrypted JSON content from the file
+                string encryptedJsonContent = File.ReadAllText(filePath);
+
+                // Decrypt the JSON content by reversing it
+                char[] charArray = encryptedJsonContent.ToCharArray();
+                Array.Reverse(charArray);
+                string decryptedJsonContent = new string(charArray);
+
+                return decryptedJsonContent;
+            }
+            else
+            {
+                return "Encrypted JSON file not found.";
+            }
+        }
+        catch (Exception ex)
+        {
+            return $"An error occurred while reading the encrypted JSON file: {ex.Message}";
+        }
+    }
+
 }
