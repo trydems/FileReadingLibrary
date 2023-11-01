@@ -192,4 +192,22 @@ public class FileReader
         }
     }
 
+    public string ReadJsonFileWithRoleSecurity(string filePath, string role)
+    {
+        switch (role)
+        {
+            // Admins have unrestricted access
+            case "admin":
+                return ReadJsonFile(filePath);
+
+            // Users can only read .....
+            case "user":
+                return ReadJsonFile(filePath);
+
+            // another role will result in a restriction
+            default:
+                return "Access denied.";
+        }
+    }
+
 }
