@@ -141,4 +141,26 @@ public class FileReader
                 return "Access denied.";
         }
     }
+
+    public string ReadJsonFile(string filePath)
+    {
+        try
+        {
+            // Check if the file exists
+            if (File.Exists(filePath))
+            {
+                // Read the JSON content from the file
+                string jsonContent = File.ReadAllText(filePath);
+                return jsonContent;
+            }
+            else
+            {
+                return "JSON file not found.";
+            }
+        }
+        catch (Exception ex)
+        {
+            return $"An error occurred while reading the JSON file: {ex.Message}";
+        }
+    }
 }
