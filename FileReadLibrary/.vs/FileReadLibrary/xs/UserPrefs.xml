@@ -1,4 +1,18 @@
 ﻿<Properties>
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.ItemProperties.FileReadLibrary FirstBuild="True" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="FileReader.cs">
+    <Files>
+      <File FileName="Class1.cs" Line="96" Column="6" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__" />
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>

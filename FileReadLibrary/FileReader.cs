@@ -1,5 +1,6 @@
 ﻿namespace FileReadLibrary;
 using System.IO;
+using System.Xml;
 
 public class FileReader
 {
@@ -73,6 +74,24 @@ public class FileReader
         catch (Exception ex)
         {
             return $"An error occurred while reading the encrypted text file: {ex.Message}";
+        }
+    }
+
+    public string ReadXmlFileWithRoleSecurity(string filePath, string role)
+    {
+        switch (role)
+        {
+            // Admins have unrestricted access
+            case "admin":
+                return ReadXmlFile(filePath); 
+
+            // Users can only read .....
+            case "user" :
+                return ReadXmlFile(filePath);
+
+            // another role will result in a restriction
+            default:
+                return "Access denied.";
         }
     }
 }
