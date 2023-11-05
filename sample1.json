@@ -1,0 +1,15 @@
+{
+  "Company": {
+    "Employee": {
+      "FirstName": "Tanmay",
+      "LastName": "Patil",
+      "ContactNo": 1234567890,
+      "Email": "tanmaypatil@xyz.com",
+      "Address": {
+        "City": "Bangalore",
+        "State": "Karnataka",
+        "Zip": 560212
+      }
+    }
+  }
+}
