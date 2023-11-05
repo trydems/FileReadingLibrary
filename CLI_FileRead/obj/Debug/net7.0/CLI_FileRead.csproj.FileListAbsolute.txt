@@ -1,0 +1,15 @@
+/Users/Ademb/Desktop/FileReadingLibrary/CLI_FileRead/bin/Debug/net7.0/CLI_FileRead
+/Users/Ademb/Desktop/FileReadingLibrary/CLI_FileRead/bin/Debug/net7.0/CLI_FileRead.deps.json
+/Users/Ademb/Desktop/FileReadingLibrary/CLI_FileRead/bin/Debug/net7.0/CLI_FileRead.runtimeconfig.json
+/Users/Ademb/Desktop/FileReadingLibrary/CLI_FileRead/bin/Debug/net7.0/CLI_FileRead.dll
+/Users/Ademb/Desktop/FileReadingLibrary/CLI_FileRead/bin/Debug/net7.0/CLI_FileRead.pdb
+/Users/Ademb/Desktop/FileReadingLibrary/CLI_FileRead/obj/Debug/net7.0/CLI_FileRead.csproj.AssemblyReference.cache
+/Users/Ademb/Desktop/FileReadingLibrary/CLI_FileRead/obj/Debug/net7.0/CLI_FileRead.GeneratedMSBuildEditorConfig.editorconfig
+/Users/Ademb/Desktop/FileReadingLibrary/CLI_FileRead/obj/Debug/net7.0/CLI_FileRead.AssemblyInfoInputs.cache
+/Users/Ademb/Desktop/FileReadingLibrary/CLI_FileRead/obj/Debug/net7.0/CLI_FileRead.AssemblyInfo.cs
+/Users/Ademb/Desktop/FileReadingLibrary/CLI_FileRead/obj/Debug/net7.0/CLI_FileRead.csproj.CoreCompileInputs.cache
+/Users/Ademb/Desktop/FileReadingLibrary/CLI_FileRead/obj/Debug/net7.0/CLI_FileRead.dll
+/Users/Ademb/Desktop/FileReadingLibrary/CLI_FileRead/obj/Debug/net7.0/refint/CLI_FileRead.dll
+/Users/Ademb/Desktop/FileReadingLibrary/CLI_FileRead/obj/Debug/net7.0/CLI_FileRead.pdb
+/Users/Ademb/Desktop/FileReadingLibrary/CLI_FileRead/obj/Debug/net7.0/CLI_FileRead.genruntimeconfig.cache
+/Users/Ademb/Desktop/FileReadingLibrary/CLI_FileRead/obj/Debug/net7.0/ref/CLI_FileRead.dll

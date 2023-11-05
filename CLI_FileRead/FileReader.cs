@@ -1,4 +1,4 @@
-﻿namespace FileReadLibrary;
+﻿namespace CLI_FileRead;
 using System.IO;
 
 public class FileReader
@@ -82,10 +82,10 @@ public class FileReader
         {
             // Admins have unrestricted access
             case "admin":
-                return ReadXmlFile(filePath); 
+                return ReadXmlFile(filePath);
 
             // Users can only read .....
-            case "user" :
+            case "user":
                 return ReadXmlFile(filePath);
 
             // another role will result in a restriction
@@ -210,3 +210,4 @@ public class FileReader
     }
 
 }
+
